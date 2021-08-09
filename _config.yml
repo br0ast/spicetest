@@ -17,7 +17,7 @@ collections:
 #permalink: /:categories/:year/:month/:day/:title/
 
 #baseurl: /
-url: https://spice-h2020.eu/
+url: https://br0ast.github.io/spicetest/
 
 # Plugins (previously gems:)
 plugins:
