@@ -103,11 +103,11 @@ p {font-family: 'Karla', sans-serif !important; color : black !important;}
   background: linear-gradient(10deg,
       rgba(163, 163, 54,0.9),
       rgba(163, 163, 54,0.8)
-    ), url('../img//hero/pic2.png') no-repeat center center /cover;
+    ); /* url('../img//hero/pic2.png') no-repeat center center /cover; */
   content: '';
   z-index: -1;
 }
-#g_back p {font-size: 1.5em; line-height: 1.7em;}
+#g_back p {font-size: 1.5em; line-height: 1.7em; text-align:center}
 
 .do-btn a {color: rgb(163, 163, 54) !important;}
 .do-btn a:hover {color: #935d55 !important;}
