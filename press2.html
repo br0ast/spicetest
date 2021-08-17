@@ -30,7 +30,7 @@ layout: default
           <div class="row">
             <div class="col-8">
                <h2 class="contact-title">ARTICLES ABOUT US</h2>
-               {% for press in site.press %}
+               {% for press in site.press reversed %}
                {%if press.section == 2 %}
                <div class="single-post">
                   <div class="blog_details">
