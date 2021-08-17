@@ -1,5 +1,5 @@
 ---
 presspath: /document/press/SPICELeaflet.pdf
-section: MEDIA
+section: 1
 title: Spice Leaflet
 ---

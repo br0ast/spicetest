@@ -1,5 +1,5 @@
 ---
 presspath: /document/press/SPICEPresentation.pdf
-section: MEDIA
+section: 1
 title: Spice Presentation
 ---

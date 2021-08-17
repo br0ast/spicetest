@@ -1,5 +1,5 @@
 ---
 presspath: /document/press/SPICEPoster.pdf
-section: MEDIA
+section: 1
 title: Spice Poster
 ---

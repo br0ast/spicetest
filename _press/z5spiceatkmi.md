@@ -2,7 +2,7 @@
 title: SPICE at KMi
 author: Knowledge Media Institute
 date: June 26, 2020
-section: ARTICLE
+section: 2
 media: http://kmi.open.ac.uk/
 externallink: http://kmi.open.ac.uk/news/article/19642
 ---

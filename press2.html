@@ -31,7 +31,7 @@ layout: default
             <div class="col-8">
                <h2 class="contact-title">ARTICLES ABOUT US</h2>
                {% for press in site.press %}
-               {%if press.section == ARTICLE %}
+               {%if press.section == 2 %}
                <div class="single-post">
                   <div class="blog_details">
                      <h3>{{ press.title }}
@@ -70,7 +70,7 @@ layout: default
               </div>
                <h2 class="contact-title">MEDIA</h2>
                {% for press in site.press %}
-               {%if press.section == MEDIA %}
+               {%if press.section == 1 %}
                <p><a href="{{ press.presspath }}">{{ press.title }}</a></p></br>
                {% endif %}
                {% endfor %}

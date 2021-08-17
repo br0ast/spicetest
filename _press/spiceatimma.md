@@ -2,7 +2,7 @@
 title: Partnership and Research&#58; SPICE Project
 author: Imma
 date: April 21, 2021
-section: ARTICLE
+section: 2
 media: https://imma.ie/
 externallink: https://imma.ie/whats-on/spice-partnership-research/
 ---
