@@ -14,7 +14,7 @@ layout: default
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-80">
-                        <span>Who talks about us</span>
+                        <span>Our leaflet, poster and presentation</span>
                         <h2>Media and Press</h2>
                     </div>
                 </div>
@@ -28,32 +28,20 @@ layout: default
     <section class="blog_area single-post-area section-padding">
        <div class="container">
           <div class="row">
-             <div class="col-lg-8 posts-list">
-               {% for event in site.press %}
-                <div class="single-post">
-                   <!-- <div class="feature-img">
-                      <img class="img-fluid" src="assets/img/blog/single_blog_1.png" alt="">
-                   </div> -->
-                   <div class="blog_details">
-                      <h2>{{ event.title }}
-                      </h2>
-                      <ul class="blog-info-link mt-3 mb-4">
-                         <li><i class="fa fa-user"></i> {{ event.author }}</li>
-                         <li><i class="fa fa-calendar"></i>{{ event.date | date_to_string }}</li>
-                      </ul>
-                      <p class="excert">
-                        {{ event.content | markdownify }}
-                      </p>
-                      {% if event.extlink %}
-                      <div class="do-btn">
-                          <a target="_blank" href="{{ event.extlink }}"><i class="ti-arrow-right"></i> Read more</a>
-                      </div>
-                      {% endif %}
-                   </div>
-                </div>
-                {% endfor %}
-
-             </div>
+            <div class="col-8">
+               <!--<h2 class="contact-title">2021</h2>
+               {% for deliverable in site.deliverables %}
+               {%if deliverable.year == 2021 %}
+               <p><a href="{{ deliverable.delivpath }}">{{ deliverable.delivcode}} - {{deliverable.title }}</a></p></br>
+               {% endif %}
+               {% endfor %}-->
+               <h2 class="contact-title">2020</h2>
+               {% for press in site.press %}
+               {%if press.year == 2020 %}
+               <p><a href="{{ press.presspath }}">{{ press.title }}</a></p></br>
+               {% endif %}
+               {% endfor %}
+           </div>
              <div class="col-lg-4">
                 {%include sidebar.html %}
              </div>
