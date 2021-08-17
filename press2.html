@@ -14,7 +14,7 @@ layout: default
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-80">
-                        <span>Our leaflet, poster and presentation</span>
+                        <span>Our Media and Article about us</span>
                         <h2>Media and Press</h2>
                     </div>
                 </div>
@@ -29,23 +29,59 @@ layout: default
        <div class="container">
           <div class="row">
             <div class="col-8">
+               <h2 class="contact-title">ARTICLES ABOUT US</h2>
+               {% for press in site.press %}
+               {%if press.section == ARTICLE %}
+               <div class="single-post">
+                  <div class="blog_details">
+                     <h3>{{ press.title }}
+                     </h3>
+                     <ul class="blog-info-link mt-3 mb-4">
+                        <li><i class="fa fa-user"></i><a href="{{ press.media }}"> {{ press.author }}</a></li>
+                        <li><i class="fa fa-calendar"></i>{{ press.date | date_to_string }}</li>
+                     </ul>
+                     <p class="excert">
+                        {{ press.content | markdownify }}
+                     </p>
+                     <div class="do-btn">
+                        <a target="_blank" href="{{ press.externallink }}"><i class="ti-arrow-right"></i> Read their article</a>
+                    </div>
+                     </div>
+               </div>
+               {% endif %}
+               {% endfor %}               
+               </div>
+               
                <!--<h2 class="contact-title">2021</h2>
                {% for deliverable in site.deliverables %}
                {%if deliverable.year == 2021 %}
                <p><a href="{{ deliverable.delivpath }}">{{ deliverable.delivcode}} - {{deliverable.title }}</a></p></br>
                {% endif %}
                {% endfor %}-->
-               <h2 class="contact-title">2020</h2>
+             <div class="col-lg-4">
+               <h2 class="contact-title">SOCIAL MEDIA</h2>
+               <div class="footer-social">
+                  <a target="_blank" href="https://www.instagram.com/spice_h2020/">Instagram:<i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://twitter.com/SpiceH2020">Twitter:<i class="fab fa-twitter"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/spice-h2020">LinkedIn:<i class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://github.com/spice-h2020">GitHub:<i class="fab fa-github"></i></a>
+                  <a target="_blank" href="https://www.youtube.com/channel/UCk04KJW9dcBDMdw0baBH_Tw">Youtube:<i class="fab fa-youtube"></i></a>
+
+              </div>
+               <h2 class="contact-title">MEDIA</h2>
                {% for press in site.press %}
-               {%if press.year == 2020 %}
+               {%if press.section == MEDIA %}
                <p><a href="{{ press.presspath }}">{{ press.title }}</a></p></br>
                {% endif %}
                {% endfor %}
            </div>
-             <div class="col-lg-4">
                 {%include sidebar.html %}
              </div>
-          </div>
+          <div class="row">
+            <div class="col-8">
+               <h2 class="contact-title">PROMOTIONAL VIDEO</h2>
+            </div>
+         </div>
        </div>
     </section>
     <!--================ Blog Area end =================-->

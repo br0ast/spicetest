@@ -1,5 +1,5 @@
 ---
 presspath: /document/press/SPICEPresentation.pdf
-year: 2020
+section: MEDIA
 title: Spice Presentation
 ---
