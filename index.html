@@ -52,13 +52,13 @@ title: SPICE - Home
     <div class="we-create-area create-padding">
         <div class="container">
             <div class="row d-flex align-items-end">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-7 col-md-12">
                     <div class="we-create-img">
                           <!-- HERE NEW PICTURE EXPLAINING THE PROJECT -->
                         <img src="{{'assets/img//hero/presentation.png' | relative_url }}" alt="Spice Description Diagram">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-5 col-md-12">
                     <div class="we-create-cap">
                         <h3>We design methods to allow citizen to express their interpretations</h3>
                         <p>We use state-of-the-art technologies to develop tools that allow users to create and semantically annotate their own interpretations. Citizens can use the tools to visualise and reflect on their own opinions and engage with a diverse range of perspectives.</p>
@@ -178,7 +178,47 @@ title: SPICE - Home
         </div>
     </div>
     <!-- What We do End-->
+<!-- latest news start -->
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-tittle text-center">
+                    <h2>Latest News​</h2>
+                </div>
+            </div>
+        </div>
+       <div class="row d-flex justify-content-center">
+            {% for post in site.posts limit:3 %}
+             <div class="single-post col-lg-3 col-md-3">
+                <div class="blog_details">
+                   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                   </h2>
+                   <ul class="blog-info-link mt-3 mb-4">
+                      <li><i class="fa fa-user"></i> {{ post.author }}</li>
+                      <li><i class="fa fa-calendar"></i>{{ post.date | date_to_string }}</li>
+                      <li><i class="fa fa-hashtag"></i> {{ post.tag }}</li>
+                   </ul>
+                   <p class="excert">
+                      {{ post.excerpt }}
+                   </p>
 
+                </div>
+             </div>
+             {% endfor %}
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center">
+                        <h2><a href="{{ site.url }}news/">See all the news</a></h2> 
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- latest news end -->
     <!-- partners -->
     <div class="services-area">
         <div class="container">
@@ -203,7 +243,7 @@ title: SPICE - Home
                 </div>
             </div> -->
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -218,7 +258,7 @@ title: SPICE - Home
                         </div> -->
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -236,7 +276,7 @@ title: SPICE - Home
 
 
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -252,7 +292,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -268,7 +308,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -284,7 +324,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -301,7 +341,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -318,7 +358,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -335,7 +375,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -352,7 +392,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -369,7 +409,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -386,7 +426,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -405,7 +445,7 @@ title: SPICE - Home
 
 
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -422,7 +462,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <!-- <span class="flaticon-tasks"></span> -->
@@ -435,7 +475,7 @@ title: SPICE - Home
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-4">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
                             <a href="http://www.istitutosorditorino.org/?language=en"><img src="assets/img/logo/sordi.png" alt="Turin Institute for the Deaf logo"></a>
@@ -459,38 +499,7 @@ title: SPICE - Home
 
 
 
-    <!-- latest news start -->
-   <section class="blog_area single-post-area section-padding">
-       <div class="container">
-           <div class="row d-flex justify-content-center">
-               <div class="col-lg-8">
-                   <div class="section-tittle text-center">
-                       <h2>Latest News​</h2>
-                   </div>
-               </div>
-           </div>
-          <div class="row d-flex justify-content-center">
-               {% for post in site.posts limit:3 %}
-                <div class="single-post col-lg-3 col-md-3">
-                   <div class="blog_details">
-                      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                      </h2>
-                      <ul class="blog-info-link mt-3 mb-4">
-                         <li><i class="fa fa-user"></i> {{ post.author }}</li>
-                         <li><i class="fa fa-calendar"></i>{{ post.date | date_to_string }}</li>
-                         <li><i class="fa fa-hashtag"></i> {{ post.tag }}</li>
-                      </ul>
-                      <p class="excert">
-                         {{ post.excerpt }}
-                      </p>
-
-                   </div>
-                </div>
-                {% endfor %}
-               </div>
-           </div>
-   </section>
-   <!-- latest news end -->
+    
 
     <!-- <div class="we-create-area create-padding">
         <div class="container">

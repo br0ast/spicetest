@@ -79,7 +79,7 @@ p {font-family: 'Karla', sans-serif !important; color : black !important;}
   min-width: 100%;
   min-height: 100%;
   width:100%;
-  height: auto;
+  height: 80vh;
 }
 
 /* #g_back {
