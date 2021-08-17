@@ -108,7 +108,7 @@ p {font-family: 'Karla', sans-serif !important; color : black !important;}
   z-index: -1;
 }
 #g_back p {font-size: 1.5em; line-height: 1.7em; text-align:center}
-#g_back h1 span {text-align:center}
+#g_back h1 span {text-align:center !important}
 .do-btn a {color: rgb(163, 163, 54) !important;}
 .do-btn a:hover {color: #935d55 !important;}
 .do-btn a i {background-color: rgb(163, 163, 54) !important;}
