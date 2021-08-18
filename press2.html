@@ -14,7 +14,7 @@ layout: default
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-80">
-                        <span>Our Media and Article about us</span>
+                        <span>Media, Press releases and Articles about us</span>
                         <h2>Media and Press</h2>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ layout: default
        <div class="container">
           <div class="row">
             <div class="col-8">
-               <h2 class="contact-title">ARTICLES ABOUT US</h2>
+               <!-- <h2 class="contact-title">ARTICLES ABOUT US</h2> -->
                {% for press in site.press reversed %}
                {%if press.section == 2 %}
                <div class="single-post">
@@ -49,9 +49,9 @@ layout: default
                      </div>
                </div>
                {% endif %}
-               {% endfor %}               
+               {% endfor %}
                </div>
-               
+
                <!--<h2 class="contact-title">2021</h2>
                {% for deliverable in site.deliverables %}
                {%if deliverable.year == 2021 %}
@@ -59,13 +59,21 @@ layout: default
                {% endif %}
                {% endfor %}-->
              <div class="col-lg-4">
-               <h2 class="contact-title">SOCIAL MEDIA</h2>
-                  <a target="_blank" href="https://www.instagram.com/spice_h2020/">Instagram:<i class="fab fa-instagram"></i></a>
-                  <a target="_blank" href="https://twitter.com/SpiceH2020">Twitter:<i class="fab fa-twitter"></i></a>
-                  <a target="_blank" href="https://www.linkedin.com/company/spice-h2020">LinkedIn:<i class="fab fa-linkedin"></i></a>
-                  <a target="_blank" href="https://github.com/spice-h2020">GitHub:<i class="fab fa-github"></i></a>
-                  <a target="_blank" href="https://www.youtube.com/channel/UCk04KJW9dcBDMdw0baBH_Tw">Youtube:<i class="fab fa-youtube"></i></a>
-               <h2 class="contact-title">MEDIA</h2>
+               <h2 class="contact-title">PROMOTIONAL VIDEO</h2>
+               <h2 class="contact-title">FOLLOW US</h2>
+               <section class="all_social">
+                 <h4><a target="_blank" href="https://www.instagram.com/spice_h2020/"><i class="fab fa-instagram"></i></a>
+                 </h4>
+                 <h4><a target="_blank" href="https://twitter.com/SpiceH2020"><i class="fab fa-twitter"></i></a>
+                  </h4>
+                 <h4><a target="_blank" href="https://www.linkedin.com/company/spice-h2020"><i class="fab fa-linkedin"></i></a>
+                   </h4>
+                 <h4><a target="_blank" href="https://github.com/spice-h2020"><i class="fab fa-github"></i></a>
+                   </h4>
+                 <h4><a target="_blank" href="https://www.youtube.com/channel/UCk04KJW9dcBDMdw0baBH_Tw"><i class="fab fa-youtube"></i></a>
+                   </h4>
+               </section>
+               <h2 class="contact-title">PRESS RELEASE AND MEDIA</h2>
                {% for press in site.press %}
                {%if press.section == 1 %}
                <p><a href="{{ press.presspath }}">{{ press.title }}</a></p>
@@ -73,13 +81,13 @@ layout: default
                {% endfor %}
                {%include sidebar.html %}
            </div>
-                
+
              </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-8">
                <h2 class="contact-title">PROMOTIONAL VIDEO</h2>
             </div>
-         </div>
+         </div> -->
        </div>
     </section>
     <!--================ Blog Area end =================-->
