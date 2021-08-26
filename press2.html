@@ -14,7 +14,7 @@ layout: default
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-80">
-                        <span>Media, Press releases and Articles about us</span>
+                        <span>Media, press releases and articles about us</span>
                         <h2>Media and Press</h2>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ layout: default
                {%if press.section == 2 %}
                <div class="single-post">
                   <div class="blog_details">
-                     <h5>{{ press.title }}
+                     <h5><a target="_blank" href="{{ press.externallink }}">"{{ press.title }}</a>
                      </h5>
                      <ul class="blog-info-link mt-3 mb-4">
                         <li><i class="fa fa-university"></i><a href="{{ press.media }}"> {{ press.author }}</a></li>
@@ -43,9 +43,6 @@ layout: default
                      <p class="excert">
                         {{ press.content | markdownify }}
                      </p>
-                     <div class="do-btn">
-                        <a target="_blank" href="{{ press.externallink }}"><i class="ti-arrow-right"></i> Read their article</a>
-                    </div>
                      </div>
                </div>
                {% endif %}
