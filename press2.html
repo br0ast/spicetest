@@ -55,28 +55,39 @@ layout: default
                <p><a href="{{ deliverable.delivpath }}">{{ deliverable.delivcode}} - {{deliverable.title }}</a></p></br>
                {% endif %}
                {% endfor %}-->
-             <div class="col-lg-4">
-               <h2 class="contact-title">PROMOTIONAL VIDEO</h2>
-               <h2 class="contact-title">FOLLOW US</h2>
-               <section class="all_social">
-                 <h4><a target="_blank" href="https://www.instagram.com/spice_h2020/"><i class="fab fa-instagram"></i></a>
-                 </h4>
-                 <h4><a target="_blank" href="https://twitter.com/SpiceH2020"><i class="fab fa-twitter"></i></a>
-                  </h4>
-                 <h4><a target="_blank" href="https://www.linkedin.com/company/spice-h2020"><i class="fab fa-linkedin"></i></a>
-                   </h4>
-                 <h4><a target="_blank" href="https://github.com/spice-h2020"><i class="fab fa-github"></i></a>
-                   </h4>
-                 <h4><a target="_blank" href="https://www.youtube.com/channel/UCk04KJW9dcBDMdw0baBH_Tw"><i class="fab fa-youtube"></i></a>
-                   </h4>
+             <div class="col-lg-4 col-md-4 col-sm-12">
+               <section>
+                 <h2 class="contact-title">PROMOTIONAL VIDEO</h2>
+                 <video controls class="col-md-12">
+                   <source src="{{'assets/video.mp4' | relative_url }}" type="video/mp4">
+                  </video>
                </section>
-               <h2 class="contact-title">PRESS RELEASE AND MEDIA</h2>
-               {% for press in site.press %}
-               {%if press.section == 1 %}
-               <p><a href="{{ press.presspath }}">{{ press.title }}</a></p>
-               {% endif %}
-               {% endfor %}
-               {%include sidebar.html %}
+               <section>
+                 <h2 class="contact-title">FOLLOW US</h2>
+                 <section class="all_social">
+                   <h4><a target="_blank" href="https://www.instagram.com/spice_h2020/"><i class="fab fa-instagram"></i></a>
+                   </h4>
+                   <h4><a target="_blank" href="https://twitter.com/SpiceH2020"><i class="fab fa-twitter"></i></a>
+                    </h4>
+                   <h4><a target="_blank" href="https://www.linkedin.com/company/spice-h2020"><i class="fab fa-linkedin"></i></a>
+                     </h4>
+                   <h4><a target="_blank" href="https://github.com/spice-h2020"><i class="fab fa-github"></i></a>
+                     </h4>
+                   <h4><a target="_blank" href="https://www.youtube.com/channel/UCk04KJW9dcBDMdw0baBH_Tw"><i class="fab fa-youtube"></i></a>
+                     </h4>
+                 </section>
+               </section>
+               <section>
+                 <h2 class="contact-title">PRESS RELEASE AND MEDIA</h2>
+                 <section>
+                   {% for press in site.press %}
+                     {%if press.section == 1 %}
+                      <p><a href="{{ press.presspath }}">{{ press.title }}</a></p>
+                     {% endif %}
+                   {% endfor %}
+                   {%include sidebar.html %}
+                 </section>
+               </section>
            </div>
 
              </div>
